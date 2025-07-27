@@ -1,31 +1,43 @@
 header.header(data-header=`${header_active}`)
-    .container
-        .header-wrapper
-            a.logo(href="index.html")
-                img.lazy(data-src="assets/images/logos/default.png", alt="SVTECH")
-            .header__nav
-                a.nav-item(href="index.html" data-name="home") Home
-                a.nav-item(href="solutions.html" data-name="solutions") Solutions
-                .nav-item.dropdown
-                    a(href="data-platform.html" data-name="service") Service
-                    ul.sub-nav
-                        li.sub-nav-item
-                            h3 Data Analytic & AI
-                        li.sub-nav-item.has-category
-                            a.nav-item(href="data-platform.html" data-name="data-platform") Data Platform
-                        li.sub-nav-item.has-category
-                            a.nav-item(href="data-governance.html" data-name="data-governance") Data Governance
-                        hr
-                        li.sub-nav-item
-                            a.nav-item(href="telecomunication.html" data-name="telecommunication") Telecommunication Solutions
-                        hr
-                        li.sub-nav-item
-                            a.nav-item(href="technologies-partners.html" data-name="technologies-partners") Technologies Partners
-                a.nav-item(href="about.html" data-name="about") About us
-                .header__cta.header__cta--mobile
-                    a.btn.btn-outline-dark.btn-lg(href="https://calendly.com/giang-nguyenhoang/30min?month=2025-03" target="_blank") Book a Meeting
-                    a.btn.btn-dark.btn-lg(href="mailto: hung.vv@svtech.com.vn" target="_blank") Contact us
-            .header__cta
-                a.btn.btn-outline-dark.btn-lg(href="https://calendly.com/giang-nguyenhoang/30min?month=2025-03" target="_blank") Book a Meeting
-                a.btn.btn-dark.btn-lg(href="mailto: hung.vv@svtech.com.vn" target="_blank") Contact us
-            include hamburger
+  .container
+    .header-wrapper
+      a.logo(href="index.html")
+        img.lazy(data-src="assets/images/logos/default.png", alt="SVTECH")
+      .header__nav
+        a.nav-item(href="index.html", data-name="home") Home
+        a.nav-item(href="solutions.html", data-name="solutions") Solutions
+        .nav-item.dropdown
+          a(href="data-platform.html", data-name="service") Service
+          ul.sub-nav
+            li.sub-nav-item
+              h3 Data Analytic & AI
+            li.sub-nav-item.has-category
+              a.nav-item(href="data-platform.html", data-name="data-platform") Data Platform
+            li.sub-nav-item.has-category
+              a.nav-item(href="data-governance.html", data-name="data-governance") Data Governance
+            hr
+            li.sub-nav-item
+              a.nav-item(href="telecomunication.html", data-name="telecommunication") Telecommunication Solutions
+            hr
+            li.sub-nav-item
+              a.nav-item(href="technologies-partners.html", data-name="technologies-partners") Technologies Partners
+        a.nav-item(href="about.html", data-name="about") About us
+        .header__cta.header__cta--mobile
+          a.btn.btn-outline-dark.btn-lg(
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+SVTECH&details=Let%27s+have+a+quick+chat.&location=Online&dates=20250801T010000Z/20250801T013000Z&add=hung.vv@svtech.com.vn",
+            target="_blank"
+          ) Book a Meeting
+          a.btn.btn-dark.btn-lg(
+            href="mailto:hung.vv@svtech.com.vn",
+            target="_blank"
+          ) Contact us
+      .header__cta
+        a.btn.btn-outline-dark.btn-lg(
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+SVTECH&details=Let%27s+have+a+quick+chat.&location=Online&dates=20250801T010000Z/20250801T013000Z&add=hung.vv@svtech.com.vn",
+          target="_blank"
+        ) Book a Meeting
+        a.btn.btn-dark.btn-lg(
+          href="mailto:hung.vv@svtech.com.vn",
+          target="_blank"
+        ) Contact us
+      include hamburger
