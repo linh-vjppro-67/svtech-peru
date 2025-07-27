@@ -1,0 +1,84 @@
+footer {
+    position: relative;
+    color: #ffffff;
+    background-color: var(--color-primary-400);
+    padding: 40px 0;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/footer-after.png");
+        background-size: cover;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        max-width: 440px;
+        width: 100%;
+        user-select: none;
+        pointer-events: none;
+    }
+    .footer-wrapper {
+        display: grid;
+        justify-content: space-between;
+        gap: 16px;
+        grid-template-columns: 33.333% 33.333%;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+    }
+    .logo {
+        display: inline-block;
+        margin-bottom: 28px;
+        img {
+            width: 178px;
+            height: auto;
+        }
+    }
+    .company-infos {
+        margin-bottom: 56px;
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            @media (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+        ul {
+            li {
+                > a {
+                    display: flex;
+                }
+                p {
+                    margin-left: 4px;
+                }
+                + li {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+    .footer-nav {
+        display: grid;
+        gap: 24px;
+        .nav-item {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 500;
+            transition: 0.15s all ease-in-out;
+            &:hover {
+                color: rgba($color: #ffffff, $alpha: 0.7);
+            }
+            &::before {
+                content: "\e315";
+                font-family: var(--font-icons);
+                font-size: 18px;
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+    }
+}

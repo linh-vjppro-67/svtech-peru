@@ -1,0 +1,247 @@
+extends ../layouts/layout
+
+block params
+    - page = "about"
+    - header_active = "about"
+    - title = "About"
+block css
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+    link(rel="stylesheet", href="./assets/css/about.css")
+block js
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+    script(src="./assets/js/about.js")
+block main
+    section.section-hero-title
+        .container
+            h1.ta-c Together we are
+                br
+                span(data-text="building history") building history
+            h3.ta-c Leading digital transformation across Southeast Asia through innovative system integration and technological excellence since 1999.
+    section.section-about-history(style="--bg-parallax: url(../images/bg-about-history.png)")
+        .about-history-slider.swiper
+            .swiper-wrapper
+                .swiper-slide
+                    .history-timline-item
+                        .year 2004
+                        .line
+                        .content
+                            p Selected as Sun Channel Partner - Products. and Services by Sun Microsystems in Vietnam
+                .swiper-slide
+                    .history-timline-item
+                        .year 2006
+                        .line
+                        .content
+                            p Become the only Sun Microsystems service and system distributor in Vietnam
+                            p Partner of Oracle and Celltck
+                .swiper-slide
+                    .history-timline-item
+                        .year 2008
+                        .line
+                        .content
+                            p Become SVTECH Joint Stock Company
+                            p Selected as Partner of Juniper, BMC Software and Roamware
+                            p Sun Microsystems' South Asia Honors Award for the best Storage Provider
+                .swiper-slide
+                    .history-timline-item
+                        .year 2010
+                        .line
+                        .content
+                            p Channel partner of IBM, Hitachi Data Systems - HDS
+                            p The top-tier partner of Juniper (Elite Partner)
+                .swiper-slide
+                    .history-timline-item
+                        .year 2012
+                        .line
+                        .content
+                            p Launched new business category in Telecom Service and Integrator (TSI), and Managed Service Provider (MSP)
+                            p Silver Partner of F5 Network
+                .swiper-slide
+                    .history-timline-item
+                        .year 2013
+                        .line
+                        .content
+                            p Award for IBM Outstanding Telecommunications Solution Partner 2013 - Software Group
+                            p Enterprise Partner of Vmware
+                .swiper-slide
+                    .history-timline-item
+                        .year 2014
+                        .line
+                        .content
+                            p Premier Partner of IBM
+                            p Award for The Best Technical Vitality Business Partner 2014 by IBM
+                .swiper-slide
+                    .history-timline-item
+                        .year 2015
+                        .line
+                        .content
+                            p Award for Asean Partner of the year by Juniper
+                            p Award for Top Big Data and Analytics 2015 by IBM
+                            p Gold Partner of HPE
+                .swiper-slide
+                    .history-timline-item
+                        .year 2016
+                        .line
+                        .content
+                            p Best Security and Risk Management - The Asian Banker
+                            p Gold Partner of NetApp
+                .swiper-slide
+                    .history-timline-item
+                        .year 2018
+                        .line
+                        .content
+                            p IBM Outstanding Security Solutions
+                .swiper-slide
+                    .history-timline-item
+                        .year 2019
+                        .line
+                        .content
+                            p HPE Platinum Partner
+                            p 2019 Partner of the Year Award by IBM for Security Solutions
+            .slider-navigation
+                .button-prev
+                    span.material-symbols-outlined chevron_left
+                .button-next
+                    span.material-symbols-outlined chevron_right
+    section.section-our-cultures
+        .container
+            h2 Our Cultures
+            .media-list
+                .media-block
+                    .image
+                        img.lazy(data-src="./assets/images/about-our-cultures.png", alt="Our Cultures")
+                    .content
+                        .table-content
+                            .row-item
+                                .item-heading Innovation Excellence
+                                .item-desc We foster a culture of continuous learning and innovation, encouraging our teams to stay at the forefront of technological advancement
+                            .row-item
+                                .item-heading Customer-Centric Approach
+                                .item-desc We prioritize understanding and meeting our clients' unique needs, building long-term partnerships through trust and exceptional service.
+                            .row-item
+                                .item-heading Technical Mastery
+                                .item-desc We invest in our people's technical expertise, maintaining the highest standards of professional certification and domain knowledge.
+                            .row-item
+                                .item-heading Collaborative Spirit
+                                .item-desc We believe in the power of teamwork, fostering an environment where diverse perspectives drive creative solutions.
+                            .row-item
+                                .item-heading Integrity & Reliability
+                                .item-desc We maintain the highest standards of professional ethics, delivering on our promises and ensuring transparency in all operations.
+    section.section-branch-offices
+        .container
+            h2 Branch Offices
+            .office-information-numbers-mobile
+                .information-item
+                    .numbers
+                        .number-item
+                            h3 2004
+                            p Year of establishment
+                        .number-item
+                            h3 500+
+                            p Number of employees
+        .tabs-container
+            .container
+                .tabs
+                    .tab-button.active(data-tab="branch_ho_chi_minh")
+                        span.txt-limmit-line.txt-limmit-line--1 Head Office (Ho Chi Minh City)
+                    .tab-button(data-tab="branch_ha_noi")
+                        span.txt-limmit-line.txt-limmit-line--1 Ha Noi Office
+                    .tab-button(data-tab="branch_da_nang")
+                        span.txt-limmit-line.txt-limmit-line--1 Da Nang Office
+                    .tab-button(data-tab="branch_sydney")
+                        span.txt-limmit-line.txt-limmit-line--1 Peru Office
+                .tab-content.active#branch_ho_chi_minh
+                    .office-informations
+                        .information-item
+                            .numbers
+                                .number-item
+                                    h3 2004
+                                    p Year of establishment
+                                .number-item
+                                    h3 500+
+                                    p Number of employees
+                        .information-item
+                            .contacts
+                                .contact-item
+                                    span.icon.material-symbols-outlined location_on
+                                    a(href="https://maps.app.goo.gl/fKB1WhFKaM3j69my7" target="_blank") 2A Phan Thuc Duyen, Ward 4, Tan Binh District, Ho Chi Minh City, Vietnam
+                                .contact-item
+                                    span.icon.material-symbols-outlined call
+                                    a(href="tel: +[028] 3 948 7620") +[028] 3 948 7620
+                        .information-item
+                            .google-map
+                                iframe( src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1174600301847!2d106.66041727526634!3d10.802314889348079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293a9f649287%3A0x9727cedd5a3bc8ab!2zMkEgUGhhbiBUaMO6YyBEdXnhu4duLCBQaMaw4budbmcgNCwgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1740893110525!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        .information-item
+                            .image-office
+                                img.lazy(data-src="./assets/images/office-ho-chi-minh.png", alt="Head Office (Ho Chi Minh City)")
+                .tab-content#branch_ha_noi
+                    .office-informations
+                        .information-item
+                            .numbers
+                                .number-item
+                                    h3 2004
+                                    p Year of establishment
+                                .number-item
+                                    h3 500+
+                                    p Number of employees
+                        .information-item
+                            .contacts
+                                .contact-item
+                                    span.icon.material-symbols-outlined location_on
+                                    a(href="https://maps.app.goo.gl/gfNce49QaBVZwSwM7" target="_blank") Level 6, IC Building, 82 Duy Tan, Dich Vong, Cau Giay District, Ha Noi, Vietnam
+                                .contact-item
+                                    span.icon.material-symbols-outlined call
+                                    a(href="tel: +[024] 3 942 7100") +[024] 3 942 7100
+                        .information-item
+                            .google-map
+                                iframe( src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.031844683703!2d105.78008867546957!3d21.031411780618487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abdc78480411%3A0xde0428f5a57b909a!2sIC%20Building!5e0!3m2!1sen!2s!4v1740894004507!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        .information-item
+                            .image-office
+                                img.lazy(data-src="./assets/images/office-ha-noi.png", alt="Ha Noi Office")
+                .tab-content#branch_da_nang
+                    .office-informations
+                        .information-item
+                            .numbers
+                                .number-item
+                                    h3 2004
+                                    p Year of establishment
+                                .number-item
+                                    h3 500+
+                                    p Number of employees
+                        .information-item
+                            .contacts
+                                .contact-item
+                                    span.icon.material-symbols-outlined location_on
+                                    a(href="https://maps.app.goo.gl/J7VZvnRY8zJQCz2d9" target="_blank") 2A Quang Trung, Hai Chau District, Da Nang, Vietnam
+                                .contact-item
+                                    span.icon.material-symbols-outlined call
+                                    a(href="tel: +[024] 3 942 7100") +[024] 3 942 7100
+                        .information-item
+                            .google-map
+                                iframe( src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8161052200107!2d108.21924337535522!3d16.075029784605288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183a789dbf73%3A0xbb546c8f51f3db9a!2zMiBRdWFuZyBUcnVuZywgSOG6o2kgQ2jDonUgMSwgSOG6o2kgQ2jDonUsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1740894151992!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        .information-item
+                            .image-office
+                                img.lazy(data-src="./assets/images/office-da-nang.png", alt="Da Nang Office")
+                .tab-content#branch_sydney
+                    .office-informations
+                        .information-item
+                            .numbers
+                                .number-item
+                                    h3 2004
+                                    p Year of establishment
+                                .number-item
+                                    h3 500+
+                                    p Number of employees
+                        .information-item
+                            .contacts
+                                .contact-item
+                                    span.icon.material-symbols-outlined location_on
+                                    a(href="https://maps.app.goo.gl/7qiuu3PhWWKux3Rq9" target="_blank") Peru
+                                .contact-item
+                                    span.icon.material-symbols-outlined call
+                                    a(href="tel: +[024] 3 942 7100") +[024] 3 942 7100
+                        .information-item
+                            .google-map
+                                iframe( src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424143.87577451975!2d150.6023282617514!3d-33.84780527328547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2s!4v1740894395347!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        .information-item
+                            .image-office
+                                img.lazy(data-src="./assets/images/lima-city.jpg", alt="Peru Office")

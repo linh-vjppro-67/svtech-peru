@@ -1,0 +1,47 @@
+$theme-colors: (
+    "primary": #3377e6,
+    "primary-400": #5589de,
+    "primary-200": #b4d0fe,
+    "primary-100": #e0ecff,
+    "primary-gradient-to-top":
+        linear-gradient(to top, rgb(10, 33, 74), rgba(10, 33, 74, 0.5)),
+    "secondary": #ef7757,
+    "secondary-100": #ffede5,
+    "secondary-50": #fff8f5,
+    "txt-body": #0e0e11,
+    "txt-gray": #7b7b84,
+    "background": #fafafa,
+    "border": #dcdce0,
+    "success": #09c253,
+    "info": #1470eb,
+    "warning": #f9b506,
+    "error": #da0b0b,
+);
+
+$theme-fonts: (
+    "body": "Barlow",
+    "icons": "Material Symbols Outlined",
+);
+
+:root {
+    --color-primary: #{map-get($map: $theme-colors, $key: "primary")};
+    --color-primary-400: #{map-get($map: $theme-colors, $key: "primary-400")};
+    --color-primary-200: #{map-get($map: $theme-colors, $key: "primary-200")};
+    --color-primary-100: #{map-get($map: $theme-colors, $key: "primary-100")};
+    --color-primary-gradient-to-top: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-gradient-to-top"
+        )};
+    --color-secondary: #{map-get($map: $theme-colors, $key: "secondary")};
+    --color-secondary-100: #{map-get($map: $theme-colors, $key: "secondary-100")};
+    --color-secondary-50: #{map-get($map: $theme-colors, $key: "secondary-50")};
+    --color-txt-body: #{map-get($map: $theme-colors, $key: "txt-body")};
+    --color-background: #{map-get($map: $theme-colors, $key: "background")};
+    --color-border: #{map-get($map: $theme-colors, $key: "border")};
+    --color-success: #{map-get($map: $theme-colors, $key: "success")};
+    --color-info: #{map-get($map: $theme-colors, $key: "info")};
+    --color-warning: #{map-get($map: $theme-colors, $key: "warning")};
+    --color-error: #{map-get($map: $theme-colors, $key: "error")};
+    --font-body: #{map-get($map: $theme-fonts, $key: "body")};
+    --font-icons: #{map-get($map: $theme-fonts, $key: "icons")};
+}

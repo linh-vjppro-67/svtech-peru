@@ -1,0 +1,68 @@
+extends ../layouts/layout
+
+block params
+    - page = "home"
+    - header_active = "home"
+    - title = "SVTech Global"
+block css
+    link(rel="stylesheet", href="./assets/css/home.css")
+block main
+    section.section-hero-title
+        .container
+            h1 We empower businesses to unlock the full potential through 
+                span(data-text="Data & AI") Data & AI
+    section.section-why-us
+        .container
+            .info-numbers
+                .number-item
+                    h2 Years of Experience
+                    h3 24 years +
+                .number-item
+                    h2 Countries of Operations
+                    h3 11 +
+                .number-item
+                    h2 Enterprise Clients
+                    h3 100+
+                .number-item
+                    h2 Technologies Partners
+                    h3 20+
+            .info-images
+                .image-item
+                    img.lazy(data-src="./assets/images/why-us-image-1.png", alt="WHY-SVTECH")
+                .image-item
+                    img.lazy(data-src="./assets/images/why-us-image-2.png", alt="WHY-SVTECH")
+                .image-item
+                    img.lazy(data-src="./assets/images/why-us-image-3.png", alt="WHY-SVTECH")
+            .info-main-content
+                h2 Why us?
+                .content-wrapper
+                    .content-left
+                        p At SVTECH, we bring decades of expertise in IT and telecommunications, delivering cutting-edge solutions tailored to your business needs. Our commitment to innovation, reliability, and customer success ensures you stay ahead in the digital era.
+                        img.lazy(data-src="./assets/images/why-us-image-4.png", alt="WHY-SVTECH")
+                    .content-right
+                        div
+                            h2 Certifications from top Technologies Vendors
+                            h3 1000+
+                        div
+                            h2 Senior IT engineers
+                            h3 300+
+                        div
+                            h2 R&D spending
+                            h3 $2M+/year
+    section.section-vision
+        .container
+            .content-wrapper
+                .content
+                    h2 Vision
+                    p Our vision is to be the leading digital transformation partner in Southeast Asia, pioneering innovative solutions that revolutionize how enterprise   s operate. We envision a future where our expertise in system integration seamlessly connects businesses across all solutions, driving technological advancement and sustainable growth. Through our commitment to excellence and continuous innovation.
+                    a.btn.btn-dark(href="#") Company timeline
+                .image
+                    img.lazy(data-src="./assets/images/vison.png", alt="VISON-SVTECH")
+    section.section-mission
+        .container
+            .content-wrapper
+                .image
+                    img.lazy(data-src="./assets/images/mission.png", alt="MISSION")
+                .content
+                    h2 Mission
+                    p At SV Technologies JSC, our mission is to empower enterprises  advancement through innovative system integration and digital infrastructure solutions. With 24 years of expertise and 1500+ successful implementations, we are committed to delivering carrier-grade reliability and transformative technologies that enable our clients' success.

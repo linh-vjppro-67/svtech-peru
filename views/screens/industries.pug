@@ -1,0 +1,186 @@
+extends ../layouts/layout
+
+block params
+    - page = "solutions"
+    - header_active = "solutions"
+    - title = "Solutions"
+block css
+    link(rel="stylesheet", href="./assets/css/solutions.css")
+block js
+block main
+    section.section-trusted-partner-stats
+        .container
+            .content-wrapper
+                .section-hero-title.m-0
+                    h1
+                        span(data-text="Your Trusted Partner") Your Trusted Partner
+                        br
+                        | in IT, Data and AI
+                    h3 We have been working with over 100 enterprises across more than 11 countries globally.
+                .stats-wrapper
+                    .stat-item
+                        .item-left
+                            h5 Telcos
+                            h3 5
+                        .item-right
+                            h5 each with over
+                            h3
+                                span 100 millions
+                                sup in users
+                    .stat-item
+                        .item-left
+                            h5 Banks
+                            h3 4
+                        .item-right
+                            h5 each with over
+                            h3
+                                span $10 billions
+                                sup in asset
+                    .stat-item
+                        .item-left
+                            h5 Enterprises
+                            h3 11
+                        .item-right
+                            h5 each with over
+                            h3
+                                span $1 billions
+                                sup in revenue
+    section.section-business-sectors
+        .tabs-container
+            .container
+                .tabs
+                    .tab-button.active(data-tab="telecommunication")
+                        img.lazy(data-src="./assets/images/telecommunication.png", alt="Telecommunication")
+                        h3.txt-limmit-line.txt-limmit-line--1 Telecommunication
+                    .tab-button(data-tab="banking_and_insurance")
+                        img.lazy(data-src="./assets/images/banking-and-insurance.png", alt="Banking and Insurance")
+                        h3.txt-limmit-line.txt-limmit-line--1 Banking and Insurance
+                    .tab-button(data-tab="energy_and_utilities") 
+                        img.lazy(data-src="./assets/images/energy-and-utilities.png", alt="Energy and Utilities")
+                        h3.txt-limmit-line.txt-limmit-line--1 Energy and Utilities
+                .tab-content.active#telecommunication
+                    .grid-container
+                        .left-section
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-telecommunication-1.png", alt="Network Infrastructure Design & Optimization")
+                                h4.txt-secondary Network Infrastructure Design & Optimization
+                                p Leading complex multi-vendor network integrations across 4G/5G technologies, optimizing performance and coverage through advanced RF planning and network architecture design.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-telecommunication-2.png", alt="Operation Support Systems OSS")
+                                h4.txt-secondary Operation Support Systems (OSS)
+                                p Implementing end-to-end OSS solutions including network monitoring, fault management, and performance a   nalytics to ensure carrier-grade reliability.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-telecommunication-3.png", alt="Telco Private Cloud Solutions")
+                                h4.txt-secondary Telco Private Cloud Solutions
+                                p Architecting carrier-grade private cloud infrastructure with high availability for virtualized network functions (VNFs), enabling seamless scalability and maximum uptime for mission-critical services.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-telecommunication-4.png", alt="Managed Services & Maintenance")
+                                h4.txt-secondary Managed Services & Maintenance
+                                p Providing 24/7 network operations support, preventive maintenance, and emergency response with < 15-minute MTTR for critical infrastructure.
+                        .right-section
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/vinaphone.png", alt="Vinaphone")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/viettel.png", alt="Viettel")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/vnpt.png", alt="VNPT")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/mobifone.png", alt="Mobifone")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/fpt-telecom.png", alt="FPT Telecom")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/cmc-telecom.png", alt="CMC Telecom")
+                .tab-content#banking_and_insurance
+                    .grid-container
+                        .left-section
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-banking-and-insurance-1.png", alt="Telecommunication")
+                                h4.txt-secondary Core Banking Integration and Customization
+                                p Seamless integration of core banking systems with 3-party services (payment gateways, CRM, regulatory systems)
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-banking-and-insurance-2.png", alt="Telecommunication")
+                                h4.txt-secondary Data Analytics and Business Intelligence Solutions
+                                p Providing predictive analytics, risk management, and customer insights using advanced data solutions.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-banking-and-insurance-3.png", alt="Telecommunication")
+                                h4.txt-secondary RegTech and Compliance Automation
+                                p Automating compliance processes for Credit Score & Trust System, Know Your Customer (e-KYC), and regulatory reporting.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-banking-and-insurance-4.png", alt="Telecommunication")
+                                h4.txt-secondary Cybersecurity and Fraud Detection Solutions
+                                p Implementing advanced threat detection, identity management, and fraud prevention systems.
+                        .right-section
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/vcb.png", alt="Vietcombank")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/bidv.png", alt="BIDV")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/mbb.png", alt="MBB")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/tcb.png", alt="Techcombank")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/vpbank.png", alt="VP Bank")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/generali.png", alt="Generali")
+                .tab-content#energy_and_utilities
+                    .grid-container
+                        .left-section
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-energy-and-utilities-1.png", alt="Telecommunication")
+                                h4.txt-secondary Smart Grid Integration and IoT Solutions
+                                p Enabling real-time monitoring, predictive maintenance, and energy efficiency optimization.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-energy-and-utilities-2.png", alt="Telecommunication")
+                                h4.txt-secondary Energy Data Management and Analytics
+                                p Providing solutions for demand forecasting, asset performance management, and customer behavior analytics.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-energy-and-utilities-3.png", alt="Telecommunication")
+                                h4.txt-secondary Renewable Energy Management Systems
+                                p Integrating and optimizing renewable energy sources, storage, and distribution networks.
+                            .feature-item.has-bg.has-bs.ta-c
+                                .icon.mx-auto
+                                    img.lazy(data-src="./assets/images/solution-energy-and-utilities-4.png", alt="Telecommunication")
+                                h4.txt-secondary Reporting Automation
+                                p Automating regulatory compliance and sustainability reporting.
+                        .right-section
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/evn.png", alt="EVN")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/sawaco.png", alt="Swaco")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/slb.png", alt="SLB")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/petronas.png", alt="Petronas")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/petrovietnam.png", alt="Petro Vietnam")
+                            .feature-item.has-bg.has-bs.ta-c
+                                .logo
+                                    img.lazy(data-src="./assets/images/clients/talisman.png", alt="Talisman")

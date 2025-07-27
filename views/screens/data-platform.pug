@@ -1,0 +1,81 @@
+extends ../layouts/layout
+
+block params
+    - page = "data-platform"
+    - header_active = "data-platform"
+    - title = "Data Platform"
+block css
+    link(rel="stylesheet", href="./assets/css/data-platform.css")
+block js
+block main
+    section.section-hero-title
+        .container
+            h1.ta-c Unleashing the Power of Data
+                br
+                span(data-text="Scalable, Secure, and Smart") Scalable, Secure, and Smart
+            h3.ta-c Designed to drive innovation and optimize operations, it empowers organizations to harness data for smarter decisions and sustainable growth.
+    section.section-data-platform
+        .tabs-container
+            .tabs-bg
+            .container
+                .tabs
+                    .tab-button.active(data-tab="financial_data_platform")
+                        span.icon.material-symbols-outlined monitoring
+                        h3.txt-limmit-line.txt-limmit-line--1 Financial Data Platform
+                    .tab-button(data-tab="global_dataLake")
+                        span.icon.material-symbols-outlined public
+                        h3.txt-limmit-line.txt-limmit-line--1 Global DataLake
+                    .tab-button(data-tab="iot_streaming") 
+                        span.icon.material-symbols-outlined home_iot_device
+                        h3.txt-limmit-line.txt-limmit-line--1 iOT Streaming Data Platform
+                .tab-content.active#financial_data_platform
+                    .grid-container
+                        .left-section
+                            .feature-item.has-border
+                                .number 1
+                                h4.txt-secondary Seamless Integration of Multi-source Financial Data
+                                p Leveraging our deep expertise in financial systems integration, we architect robust platforms that consolidate and harmonize data from diverse sources including core banking systems, payment networks, and third-party financial services.
+                            .feature-item.has-border
+                                .number 2
+                                h4.txt-secondary Real-time Processing with Enterprise-grade Security
+                                p Our platform handles millions of financial transactions per second while maintaining strict compliance with banking security standards, enabling real-time analytics and decision-making with zero compromise on data protection.
+                            .feature-item.has-border
+                                .number 3
+                                h4.txt-secondary Advanced Analytics and AI-driven Insights
+                                p Transform raw financial data into actionable intelligence through our sophisticated analytics engine, featuring AI-powered risk assessment, fraud detection, and personalized banking insights for enhanced customer experience.
+                        .right-section
+                            img.lazy(data-src="./assets/images/financial-data-platform.png", alt="Financial Data Platform")
+                .tab-content#global_dataLake
+                    .grid-container
+                        .left-section
+                            .feature-item.has-border
+                                .number 1
+                                h4.txt-secondary Centralized Data Repository
+                                p Our multi-region data lake architecture unifies diverse data sources across global operations, providing a single source of truth while maintaining data sovereignty and regional compliance requirements.
+                            .feature-item.has-border
+                                .number 2
+                                h4.txt-secondary Data Integration & Processing
+                                p Seamlessly ingest, transform, and process structured and unstructured data from multiple international sources in real-time, with built-in data quality management and governance frameworks.
+                            .feature-item.has-border
+                                .number 3
+                                h4.txt-secondary Supercharged your AI Journey
+                                p Leverage powerful AI and machine learning capabilities with real-time data to extract meaningful insights from your global data assets, enabling data-driven decision making across borders and business units.
+                        .right-section
+                            img.lazy(data-src="./assets/images/global-dataLake.png", alt="Global DataLake")
+                .tab-content#iot_streaming
+                    .grid-container
+                        .left-section
+                            .feature-item.has-border
+                                .number 1
+                                h4.txt-secondary Real-Time Bigdata Processing
+                                p Process millions of data points per second from IoT sensors and devices with ultra-low latency, enabling immediate operational insights and automated responses to critical events.
+                            .feature-item.has-border
+                                .number 2
+                                h4.txt-secondary Device Integration & Management
+                                p Unified platform for IoT device lifecycle management, supporting diverse protocols and seamless integration of smart devices, sensors, and industrial equipment across distributed networks.
+                            .feature-item.has-border
+                                .number 3
+                                h4.txt-secondary From Raw IoT Data to AI-driven Insights
+                                p Turn massive streams of IoT data into actionable intelligence through edge computing, predictive maintenance algorithms, and real-time anomaly detection for optimal operational efficiency.
+                        .right-section
+                            img.lazy(data-src="./assets/images/iot-streaming.png", alt="iOT Streaming Data Platform")

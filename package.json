@@ -1,0 +1,32 @@
+{
+    "name": "svtech-global",
+    "version": "1.0.0",
+    "description": "We empower businesses to unlock the full potential through Data & AI",
+    "scripts": {
+        "compile:pug": "pug -w ./views/screens -o ./ -P",
+        "compile:sass": "node-sass ./assets/scss -o ./assets/css --output-style expanded --source-map true --source-map-contents true",
+        "watch:sass": "node-sass ./assets/scss -o ./assets/css --output-style expanded --source-map true --source-map-contents true --watch",
+        "delete:css": "del-cli --force ./assets/css/*",
+        "build:sass": "node-sass ./assets/scss -o ./assets/css --output-style compressed",
+        "server": "live-server",
+        "dev": "npm-run-all -p delete:css compile:pug compile:sass watch:sass server",
+        "build": "npm-run-all -p delete:css compile:pug build:sass"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hoangviethung/source-pug-sass-basic.git"
+    },
+    "keywords": [
+        "sources-pug-sass"
+    ],
+    "author": "hoangviethung",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "del-cli": "^4.0.1",
+        "live-server": "^1.2.2",
+        "node-sass": "^7.0.1",
+        "npm-run-all": "^4.1.5",
+        "pug": "^3.0.2"
+    }
+}

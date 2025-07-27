@@ -1,0 +1,10 @@
+.tab-button {
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

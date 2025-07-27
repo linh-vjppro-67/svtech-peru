@@ -1,0 +1,29 @@
+block params
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        // *** META *** //
+        include meta
+        // *** CSS *** //
+        include css
+        // *** CSS ON SCREEN *** //
+        block css
+        title #{title}
+    body(data-page=`${page}`)
+        // *** HEADER *** //
+        block header
+            include header
+        // *** MAIN *** //
+        main
+            block main
+        // *** FOOTER *** //
+        block footer
+            include footer
+        // *** BACK TO TOP *** //
+        block back-to-top
+            include back-to-top
+        // *** JS *** //
+        include js
+        // *** JS ON SCREEN *** //
+        block js

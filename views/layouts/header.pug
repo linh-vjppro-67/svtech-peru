@@ -1,0 +1,31 @@
+header.header(data-header=`${header_active}`)
+    .container
+        .header-wrapper
+            a.logo(href="/")
+                img.lazy(data-src="assets/images/logos/default.png", alt="SVTECH")
+            .header__nav
+                a.nav-item(href="/" data-name="home") Home
+                a.nav-item(href="solutions.html" data-name="solutions") Solutions
+                .nav-item.dropdown
+                    a(href="data-platform.html" data-name="service") Service
+                    ul.sub-nav
+                        li.sub-nav-item
+                            h3 Data Analytic & AI
+                        li.sub-nav-item.has-category
+                            a.nav-item(href="data-platform.html" data-name="data-platform") Data Platform
+                        li.sub-nav-item.has-category
+                            a.nav-item(href="data-governance.html" data-name="data-governance") Data Governance
+                        hr
+                        li.sub-nav-item
+                            a.nav-item(href="telecomunication.html" data-name="telecommunication") Telecommunication Solutions
+                        hr
+                        li.sub-nav-item
+                            a.nav-item(href="technologies-partners.html" data-name="technologies-partners") Technologies Partners
+                a.nav-item(href="about.html" data-name="about") About us
+                .header__cta.header__cta--mobile
+                    a.btn.btn-outline-dark.btn-lg(href="https://calendly.com/giang-nguyenhoang/30min?month=2025-03" target="_blank") Book a Meeting
+                    a.btn.btn-dark.btn-lg(href="mailto: giang.nguyenhoang@svtech.com" target="_blank") Contact us
+            .header__cta
+                a.btn.btn-outline-dark.btn-lg(href="https://calendly.com/giang-nguyenhoang/30min?month=2025-03" target="_blank") Book a Meeting
+                a.btn.btn-dark.btn-lg(href="mailto: giang.nguyenhoang@svtech.com" target="_blank") Contact us
+            include hamburger

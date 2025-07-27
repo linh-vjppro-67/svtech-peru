@@ -1,0 +1,53 @@
+extends ../layouts/layout
+
+block params
+    - page = "technologies-partners"
+    - header_active = "technologies-partners"
+    - title = "Technologies Partners"
+block css
+    link(rel="stylesheet", href="./assets/css/technologies-partners.css")
+block js
+block main
+    section.section-hero-title-bg-parallax.heading-center-center(style="--bg-parallax: url(../images/technologies-partners-hero-title.png)")
+        .container
+            .section-hero-title.txt-light.ta-c
+                h1 Technologies Partners
+                h3 Leveraging strategic partnerships with global technology leaders to deliver cutting-edge solutions and drive digital transformation across Southeast Asia
+    section.section-technologies-partners
+        .partners-slider
+            .partners
+                - for (var i = 1; i <= 9; i++)
+                    img.lazy(data-src=`./assets/images/partners/partner-${i}.png` alt=`Client ${i}`)
+                - for (var i = 1; i <= 9; i++)
+                    img.lazy(data-src=`./assets/images/partners/partner-${i}.png` alt=`Client ${i}`)
+    section.section-technologies-partners-features
+        .container
+            .section-hero-title.ta-c
+                h1 Comprehensive Service Offerings
+                h3 We combine our system integration expertise with industry-leading technologies to deliver comprehensive solutions that address complex business challenges. Our certified partnerships enable us to provide best-in-class implementations across cloud, data, and network infrastructure.
+            .features
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary Consulting Service
+                    p Our expert consultants work closely with your team to assess, design, and architect solutions that align with your business objectives.
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary Professional Service
+                    p Certified implementation teams ensure smooth deployment of partner technologies, following industry best practices and proven methodologies.
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary Managed Service
+                    p 24/7 post-implementation support and maintenance services that ensure optimal performance of your technology investments.
+    section.section-technologies-partners-media-list
+        .container
+            .media-list
+                .media-block.has-bg
+                    .content
+                        .section-hero-title.m-0
+                            h1 Building Success Through Partnership Excellence
+                            h3 Our strategic partnerships enable us to stay at the forefront of technological innovation while providing our clients with reliable, scalable, and future-ready solutions. As certified partners with leading technology providers, we offer:
+                        .list-tag
+                            .tag Direct access to partner technical resources
+                            .tag Early adoption of new technologies
+                            .tag Optimized pricing and licensing
+                            .tag Certified implementation expertise
+                            .tag Priority support escalation
+                    .image
+                        img.lazy(data-src="./assets/images/technologies-partners-media-1.png", alt="Building Success Through Partnership Excellence")

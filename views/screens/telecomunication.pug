@@ -1,0 +1,51 @@
+extends ../layouts/layout
+
+block params
+    - page = "telecommunication"
+    - header_active = "telecommunication"
+    - title = "Telecommunication Solution"
+block css
+    link(rel="stylesheet", href="./assets/css/telecommunication.css")
+block js
+block main
+    section.section-hero-title-bg-parallax(style="--bg-parallax: url(../images/telecommunication-hero-title.png)")
+        .container
+            .section-hero-title.txt-light.ta-c
+                h1 Transforming Telecommunication for the Digital Age
+                h3 Building next-generation network infrastructure to power the connected future with cutting-edge 5G technology and end-to-end integration solutions.
+    section.section-telecommunication-features
+        .container
+            .features
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary Network Infrastructure Design
+                    p Expert implementation of carrier-grade networks using industry-leading vendors including Juniper and Nokia, optimized for reliability and performance.
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary 5G Network Solutions
+                    p Comprehensive 5G network planning, deployment, and optimization services, enabling operators to deliver next-generation mobile experiences.
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary Network Automation & SDN
+                    p Advanced software-defined networking solutions with automated provisioning and management, reducing operational complexity while increasing agility.
+                .feature-item.has-bg.ta-c
+                    h4.txt-secondary Network Security & Resilience
+                    p End-to-end security architecture with built-in redundancy and threat protection, ensuring maximum network availability.
+    section.section-telecommunication-media-list
+        .container
+            .media-list
+                .media-block.has-bg
+                    .image
+                        img.lazy(data-src="./assets/images/telecommunication-media-2.png", alt="Powering Digital Transformation on a National Scale")
+                    .content
+                        h4 Powering Digital Transformation on a National Scale
+                        p With over two decades of experience in telecommunications infrastructure, we deliver comprehensive network solutions that help operators modernize their infrastructure for the 5G era. From core network upgrades to edge computing deployments, our solutions are built on proven methodologies and best practices, ensuring seamless integration and optimal performance. We specialize in:
+                        .list-tag
+                            .tag 5G core and RAN implementation
+                            .tag Transport network modernization
+                            .tag Network function virtualization (NFV)
+                            .tag Cloud-native network solutions
+                            .tag End-to-end network security
+                .media-block.has-bg
+                    .content
+                        h4 Enabling Next-Generation Communications
+                        p Our telecommunications expertise spans the entire network lifecycle, from initial planning and design through deployment and ongoing optimization. We help operators transform their infrastructure to support emerging technologies and services while maximizing the value of existing investments. Partner with us to build the foundation for your digital future.
+                    .image
+                        img.lazy(data-src="./assets/images/telecommunication-media-1.png", alt="Enabling Next-Generation Communications")
